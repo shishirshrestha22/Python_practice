@@ -12,11 +12,11 @@ while True:
  if option == "1":
      amount=float(input("Enter amount to deposit: "))
      balance += amount
-     print("your new balance is:",balance)
+     print("Amount deposited sucessfully.Your new balance is:",balance)
  elif option == "2":
      amount=float(input("Enter amount to withdraw: "))
      if amount>1000:
-         print("insufficient balance")
+         print(f"Insufficient balance, your current balance is {balance} ")
      else:
          balance-=amount
          print("Your remaining balance is :",balance)
@@ -27,3 +27,4 @@ while True:
      break
  else:
      print("Invalid option ,please select (1 or 2 or 3 or 4)")
+
