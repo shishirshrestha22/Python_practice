@@ -7,8 +7,8 @@ def prod(a,b):
 def div(a,b):
     return a/b
 
-a=int(input("enter the 1st num:"))
-b=int(input("enter the 2nt num:"))
+num1=int(input("enter the 1st num:"))
+num2=int(input("enter the 2nt num:"))
 
 print("PRESS 1 for addtion")
 print("PRESS 2. for subtraction")
@@ -17,12 +17,12 @@ print("PRESS 4. for division")
 s=int(input("enter the choice (1,2,3,4)"))
 
 if s==1:
-    print("the sum is =",add(a,b))
+    print("the sum is =",add(num1,num2))
 elif s==2:
-    print("the subtraction is =",sub(a,b))
+    print("the subtraction is =",sub(num1,num2))
 elif s==3:
-    print("the product is =",prod(a,b))
+    print("the product is =",prod(num1,num2))
 elif s==4:
-    print("the division is =",div(a,b))
+    print("the division is =",div(num1,num2))
 else:
     print("invalid choice ")     
