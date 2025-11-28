@@ -28,4 +28,4 @@ days = get_days_of_month(month,year)
 if days == -1:
     print("Invlaid month number !")
 else:
-    print(f"The {year} year has {days} days in {month}th month")
+    print(f"In {year} year, month {month} has {days} days")
