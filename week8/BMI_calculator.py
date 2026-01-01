@@ -6,11 +6,22 @@ class Bmi:
 
     def calculate_bmi(self):
         return self.weight/(self.height**2)
-
+    def bmi_status(self):
+        bmi = self.calculate_bmi()
+        if bmi < 18.5:
+            return "Underweight"
+        elif bmi < 25:
+            return "Healthy weight"
+        elif bmi < 30:
+            return "Overweight"
+        else:
+            return "Obese"
     def display(self):
-        print("Weight:",self.weight)
-        print("Height: ",self.height)
-        print("Your BMI (Boday mass index) is:",self.calculate_bmi())
+        print("Weight:",self.weight ,"kg")
+        print("Height: ",self.height ,"m")
+        print("Your BMI (Body mass index) is:",self.calculate_bmi())
+        print("BMI Status:", self.bmi_status())
+        
 
 weight = float(input("Enter your weight in kilograms: "))
 height = float(input("Enter your height in meters: "))
